@@ -1,0 +1,6 @@
+*.swp
+*.swo
+*.swn
+.ropeproject
+*.egg-info
+__pycache__
