@@ -1,0 +1,1 @@
+print a list of all currently set environment variables in bash

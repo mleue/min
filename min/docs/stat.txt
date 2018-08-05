@@ -1,0 +1,8 @@
+get detailed information about a file
+
+EXAMPLES
+	stat file.txt
+		print e.g. filesize, number of symlinks, permissions, dates
+
+RELATED
+	ls

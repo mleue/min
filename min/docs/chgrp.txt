@@ -1,0 +1,9 @@
+change the ownergroup of a file
+
+EXAMPLES
+	chgrp group file.txt
+		set the ownergroup of file.txt to be group
+
+RELATED
+	chown
+	chmod

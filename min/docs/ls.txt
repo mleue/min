@@ -1,0 +1,18 @@
+list contents of a directory
+
+EXAMPLES
+	ls -lh
+		detailed format with human-readable sizes
+	ls -rtl
+		detailed format, time-sorted with newest at the bottom
+
+FLAGS
+	-l	detailed (long) output
+	-a	include hidden files
+	-h	use human-readable filesizes for -l
+	-t	sort by modification time (newest first)
+	-r	reverse order (e.g. in combination with -t)
+	-L1	output only one item per line
+
+RELATED
+	tree

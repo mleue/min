@@ -1,0 +1,17 @@
+copy a file or directory
+
+EXAMPLES
+	cp file1.txt dir/
+		copy file1.txt to dir/
+	cp -rv dir new/location/
+		copy directory dir over to new/location/ recursively and verbosely
+
+FLAGS
+	-i	ask before overwriting anything (interactive)
+	-v	explain what is being done (verbose)
+	-r	copy a directory recursively (all directories and subdirectories)
+	-f	force overwrite existing target files
+
+RELATED
+	rm
+	mv

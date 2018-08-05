@@ -1,0 +1,14 @@
+cp via ssh
+
+EXAMPLES
+	scp local_path/file.txt <USER>@<IP>:/remote_path/
+		copy over the local file.txt to the remote path on the server
+	scp -r <USER>@<IP>:/remote_path/dir/ local_path/
+		copy over the dir from remote to the local destination
+
+FLAGS
+	-r	recursively copy directories
+
+RELATED
+	cp
+	ssh

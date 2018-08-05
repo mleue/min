@@ -1,0 +1,11 @@
+cat for compressed files
+
+EXAMPLES
+	zcat file1.zip file2.zip
+		concatenate uncompressed contents of file1.zip and file2.zip, print to stdout
+
+RELATED
+	zless
+	zgrep
+	unzip
+	gzip

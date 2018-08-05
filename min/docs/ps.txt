@@ -1,0 +1,13 @@
+list all currently running processes
+
+EXAMPLES
+	ps -A
+		list all currently running processes with pid, process name, etc.
+	ps -A | grep "firefox"
+		find all "firefox" processes (to e.g. find the pid of the process)
+
+FLAGS
+	-A	list all processes (default is to only list the processes associated with the same user and terminal that ps is being run from)
+
+RELATED
+	top

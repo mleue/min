@@ -1,0 +1,8 @@
+print information about the system and currently running processes
+
+EXAMPLES
+	top | grep "firefox"
+		track all processes named "firefox", print to stdout
+
+RELATED
+	ps

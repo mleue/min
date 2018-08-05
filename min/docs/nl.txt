@@ -1,0 +1,7 @@
+add line numbers to each line in a file
+
+EXAMPLES
+	nl file.txt
+		add line numbers to every line in file.txt, print to stdout
+	nl file.txt > out.txt
+		add line numbers to every line in file.txt, write to out.txt

@@ -1,0 +1,22 @@
+move/rename a file or directory
+
+EXAMPLES
+	mv file.txt dir/
+		move file.txt from . into dir/
+	mv -i file.x file.y
+		rename file.x to file.y, ask if overwriting an existing file
+	mv dir/*.txt .
+		move all .txt files from dir/ to .
+	mv dir1/ dir2/
+		move dir1 to be in dir2/
+	mv dir1 dir2
+		rename dir1 to dir2
+
+FLAGS
+	-i	ask before overwriting anything (interactive)
+	-v	explain what is being done (verbose)
+	-f	force overwrite existing target files
+
+RELATED
+	rm
+	cp

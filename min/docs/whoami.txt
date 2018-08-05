@@ -1,0 +1,4 @@
+print the currently logged in username
+
+RELATED
+	w

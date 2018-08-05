@@ -1,0 +1,16 @@
+unzip a zip file
+
+EXAMPLES
+	unzip file.zip
+		unzip file.zip to ., recreating the file structure in file.zip
+	unzip file.zip -d out_dir
+		unzips file.zip into out_dir, creating out_dir if necessary
+
+FLAGS
+	-d	define an output directory
+	-c	print contents of files in zipfile to stdout
+	-l	list files contained in zipfile
+
+RELATED
+	zip
+	tar

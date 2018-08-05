@@ -1,0 +1,17 @@
+update the database used by locate
+
+EXAMPLES
+	sudo updatedb
+		updates the database
+	updatedb -l 0 -o $HOME/var/mlocate.db -U $HOME
+		create an extra database for the user home directory (this is necessary when the home directory is encrypted)
+		important: add 'export LOCATE_PATH="$HOME/var/mlocate.db"' to your .bashrc to inform locate about this new additional database
+
+FLAGS
+	-U	start location for recursively adding new files
+	-o	output file to write the database to
+	-l	visibility flag for the created database (0 means whoever has access to the created database can see all the files in there, even for files that he wouldn't have access to)
+	-v	write to stdout the files that are being added (verbose)
+
+RELATED
+	locate

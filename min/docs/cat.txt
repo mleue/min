@@ -1,0 +1,12 @@
+concatenate several files into one
+
+EXAMPLES
+	cat file1.x file2.x
+		concat file1.x and file2.x
+	cat *.txt
+		concat all .txt files in .
+	cat -n file1.x file2.x
+		concat file1.x and file2.x, numbering each line
+
+FLAGS
+	-n	number each line in the output

@@ -1,0 +1,5 @@
+less for compressed files
+
+RELATED
+	zcat
+	zgrep

@@ -1,0 +1,5 @@
+splice the stdout of any command to both print to stdout and write to a file
+
+EXAMPLES
+	ls -al | tee out.txt
+		both print the output of the command and write it to out.txt

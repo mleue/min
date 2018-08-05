@@ -1,0 +1,7 @@
+print a line of text
+
+EXAMPLES
+	echo Hello World
+		prints "Hello World\n"
+	echo $BASH
+		prints value of environment variable BASH
