@@ -1,0 +1,1 @@
+print information about the uptime and current load of the machine

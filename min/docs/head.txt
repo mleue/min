@@ -1,0 +1,12 @@
+print only the first n lines of a file
+
+EXAMPLES
+	head -n20 file.txt
+		print the first 20 lines of file.txt
+
+FLAGS
+	-n	number of lines to be printed (default: 10)
+
+RELATED
+	less
+	tail

@@ -1,0 +1,7 @@
+print user id and user group memberships
+
+EXAMPLES
+	id
+		print user id and group memberships for active user
+	id user
+		print user id and group memberships for user user

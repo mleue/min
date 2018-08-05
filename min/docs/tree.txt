@@ -1,0 +1,18 @@
+print a filetree from some starting directory
+
+EXAMPLES
+	tree -C
+		print the filetree starting at . and using colors
+	tree -ah somedir/
+		print the filetree starting at somedir/, including hidden files and adding file size to output
+	tree -L 3
+		print the filetree starting at . and 3 levels down
+
+FLAGS
+	-L	integer, define how many levels down the tree should go (default: all)
+	-a	include hidden files
+	-h	include filesize in human-readable format
+	-C	use colors
+
+RELATED
+	ls

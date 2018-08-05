@@ -1,0 +1,14 @@
+find a file
+
+EXAMPLES
+	find . -name '*.txt'
+		print all filepaths to .txt files anywhere under .
+	find . -iname 'somefile'
+		print all filepaths to files containing 'somefile' anywhere under ., case-insensitive
+
+FLAGS
+	-name		the pattern of the filename to search for (excluding the path)
+				important to put the pattern into '', so that it doesn't get globbed by bash
+	-iname		case-insensitive search pattern
+	-maxdepth	maximum depth at which to search through subdirectories
+	-type		the type of file to search for (f - file, d - directory, l - symbolic link)

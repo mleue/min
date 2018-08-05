@@ -1,0 +1,11 @@
+print system information
+
+EXAMPLES
+	uname -a
+		print all system information (e.g. kernel, os, user)
+
+FLAGS
+	-a	print a summary of all important system info
+
+RELATED
+	lsb_release

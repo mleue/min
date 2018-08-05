@@ -1,0 +1,11 @@
+print detailed information about the installed os
+
+EXAMPLES
+	lsb_release -a
+		print e.g. name and release version of the installed os
+
+FLAGS
+	-a	print all available info
+
+RELATED
+	uname

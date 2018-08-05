@@ -1,0 +1,8 @@
+create a mock file filled with garbage data of a certain filesize
+
+EXAMPLE
+	truncate file.x -s100000
+		create a mock file file.x filled of size 100000 bytes
+
+RELATED
+	touch

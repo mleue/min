@@ -1,0 +1,11 @@
+diff two files, print what is different
+
+EXAMPLES
+	diff file1.txt file2.txt
+		print differing lines between file1.txt and file2.txt
+
+FLAGS
+	-q	print only whether the two files differ
+
+RELATED
+	vimdiff

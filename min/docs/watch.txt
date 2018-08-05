@@ -1,0 +1,8 @@
+run some command again and again in intervals
+
+EXAMPLES
+	watch -n 5 'ls -rtl | tail'
+		every 5 seconds monitor monitor if new files were created in .
+
+FLAGS
+	-n	interval in seconds

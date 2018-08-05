@@ -1,6 +1,7 @@
 *.swp
 *.swo
 *.swn
+*.un~
 .ropeproject
 *.egg-info
 __pycache__

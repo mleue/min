@@ -1,0 +1,9 @@
+change the owner of a file
+
+EXAMPLES
+	chown user file.txt
+		set the owner of file.txt to be user
+
+RELATED
+	chgrp
+	chmod

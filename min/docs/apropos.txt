@@ -1,0 +1,5 @@
+list all commands that have the search pattern in their manpage synopsis
+
+EXAMPLES
+	apropos "zip"	
+		print list of all commands that have "zip" in their synopsis

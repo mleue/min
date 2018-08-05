@@ -1,0 +1,1 @@
+print a content description of a file, possibly also the filetype and encoding

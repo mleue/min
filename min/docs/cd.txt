@@ -1,0 +1,9 @@
+change directory in the filesystem
+
+EXAMPLES
+	cd ~
+		change to the home directory
+	cd ..
+		go up one directory
+	cd -
+		go back to where you were before the last cd command

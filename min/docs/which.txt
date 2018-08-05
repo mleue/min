@@ -1,0 +1,5 @@
+print the path to the binary executable for any command
+
+EXAMPLES
+	which bash
+		prints the path to the `bash` executable

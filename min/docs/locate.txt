@@ -1,0 +1,12 @@
+quickly find matching files on your filesystem
+
+EXAMPLES
+	locate -i "filexyz"
+		find all files containing "filexyz" anywhere in the filepath, case insensitive, print matches to stdout
+
+FLAGS
+	-i	case insensitive matching
+	-c	print a count of matches instead of the matches themselves
+
+RELATED
+	updatedb

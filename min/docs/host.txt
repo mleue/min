@@ -1,0 +1,4 @@
+dns lookup for a domain (prints e.g. the IP address)
+
+RELATED
+	whois

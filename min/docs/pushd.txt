@@ -1,0 +1,11 @@
+push a filesystem location onto a global stack
+
+EXAMPLES
+	pushd .
+		push the current directory onto the stack
+	pushd ~/some/path
+		push ~/some/path onto the stack
+
+RELATED
+	popd
+	cd

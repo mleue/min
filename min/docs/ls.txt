@@ -1,3 +1,5 @@
+list contents of a directory
+
 EXAMPLES
 	ls -lh
 		detailed format with human-readable sizes
@@ -11,3 +13,6 @@ FLAGS
 	-t	sort by modification time (newest first)
 	-r	reverse order (e.g. in combination with -t)
 	-L1	output only one item per line
+
+RELATED
+	tree

@@ -1,0 +1,9 @@
+list all currently open files
+(in unix anything is a file, so this also includes processes, sockets etc.)
+
+EXAMPLES
+	lsof -i :8000
+		print a list of all files/processes that are currently operating on port 8000
+
+FLAGS
+	-i 	specify an internet address search pattern for files to match

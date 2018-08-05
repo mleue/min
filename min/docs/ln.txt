@@ -1,0 +1,5 @@
+create a file link between two files
+
+EXAMPLES
+	ln -s target.x origin.x
+		create a file origin.x which is symbolically linked to the existing file target.x
