@@ -1,0 +1,5 @@
+list information about hardware connected via USB
+
+RELATED
+	lspci
+	lshw

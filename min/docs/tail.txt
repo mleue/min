@@ -1,0 +1,15 @@
+print only the last n lines of a file
+
+EXAMPLES
+	tail -n20 file.txt
+		print the last 20 lines of file.txt
+	tail -f abc.log
+		print the last 10 lines of abc.log and update whenever new data gets appended to the log
+
+FLAGS
+	-n	number of lines to be printed (default: 10)
+	-f	stay active on the file and update whenever data gets appended to the file (follow)
+
+RELATED
+	less
+	head

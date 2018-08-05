@@ -1,0 +1,10 @@
+marks a variable as a local environment variable
+(i.e. it will be available to any subsequent command run from the same terminal)
+
+EXAMPLES
+	export VARNAME=value
+		create variable VARNAME and export it
+
+RELATED
+	printenv
+	unset

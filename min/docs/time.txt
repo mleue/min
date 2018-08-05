@@ -1,0 +1,4 @@
+time the execution of any command
+
+EXAMPLES
+	time grep -rin "pattern" .

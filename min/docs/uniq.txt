@@ -1,0 +1,12 @@
+handle unique subsequent lines in a sorted file (reduce/pick)
+
+EXAMPLES
+	sort file.txt > uniq
+		first sort lines, then reduce all duplicates to only 1 occurence, print to stdout
+	uniq -i < sorted_lines.txt
+		reduce duplicates from sorted_lines.txt, case-insensitive, print to stdout
+
+FLAGS
+	-u	output only lines that originally were unique
+	-d	output only lines that originally were duplicates (one per group)
+	-i	case insensitive matching

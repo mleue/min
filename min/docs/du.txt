@@ -1,0 +1,9 @@
+estimate filesize (disk-usage) of a file/dir
+
+EXAMPLES
+	du -sh *
+		print filesize of all files/dirs in . in human-readable format, summarize for dirs
+
+FLAGS
+	-h	print filesize in human-readable format
+	-s	summarize filesize for directories (otherwise directories will get explored recursively and the filesize of each file will be printed separately)

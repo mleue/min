@@ -1,0 +1,13 @@
+cut columns of data from a file
+
+EXAMPLES
+	cut -c5-10 file.txt
+		print 5th to 10th character of each line in file.txt
+	cut -c10- file.txt
+		print 10th to last character of each line file.txt
+	cut -d':' -f1,3,5 /etc/passwd
+		print 1st, 3rd and 5th field of data in-between delimiter ':' of each line in /etc/passwd
+
+FLAGS
+	-c	charwise column selection
+	-d	fieldwise column selection (delimiter)

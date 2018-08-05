@@ -1,0 +1,11 @@
+count lines, words and bytes in a file
+
+EXAMPLES
+	wc file.txt
+		print line-, word- and bytecount for file.txt
+
+FLAGS
+	-w	print wordcount only
+	-l	print linecount only
+	-m	print charcount only
+	-c	print bytecount only

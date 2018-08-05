@@ -1,0 +1,15 @@
+convert a file from one file encoding to another
+
+EXAMPLES
+	iconv -l
+		get a list of available character encodings
+	iconv -f LATIN1 -t UTF-8 file.txt
+		read file.txt as latin1, convert to utf-8, print to stdout
+	iconv -f LATIN1 -t UTF-8 -o out.txt file.txt
+		read file.txt as latin1, convert to utf-8, write to out.txt
+
+FLAGS
+	-f	source file encoding (from)
+	-t	target file encoding
+	-o	output filename
+	-l	print a list of available encodings

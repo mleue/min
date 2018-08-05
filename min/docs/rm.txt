@@ -1,0 +1,19 @@
+remove a file or directory
+
+EXAMPLES
+	rm file.x
+		remove file.x
+	rm -ri dir/
+		recursively remove dir/, asking for permission for each file
+	rm -rfv dir/
+		recursively force remove dir/ and all subdirs without additional asking, logging verbosively
+
+FLAGS
+	-r	recursively (dir and all subdirs)
+	-f	force remove
+	-i	ask for every file before deleting (interactive)
+	-v	log each file that is getting removed (verbose)
+
+RELATED
+	cp
+	mv

@@ -1,0 +1,5 @@
+list information about available hardware
+
+RELATED
+	lsusb
+	lspci

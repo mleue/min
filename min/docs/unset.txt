@@ -1,0 +1,4 @@
+remove a variable from the environment variables (that was e.g. previously set using export)
+
+RELATED
+	export

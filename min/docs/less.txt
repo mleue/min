@@ -1,0 +1,8 @@
+look at a file without having to load it into memory entirely right away
+(great for peeking into large files)
+
+RELATED
+	head
+	tail
+	vi
+	vim

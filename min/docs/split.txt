@@ -1,0 +1,17 @@
+split a file into parts by certain criteria (e.g. size, lines)
+
+EXAMPLES
+	split file.txt -l5 split_file -d --additional-suffix=.txt
+		split file.txt into split files, each containing 5 lines, naming them split_file{i}.txt
+	split file.txt -b1000
+		split file.txt into split files, each containing 1000bytes, using the standard naming scheme
+
+FLAGS
+	-l	split by lines
+	-b	split by size in bytes
+	-d	use numeric suffixes for distinguishing the created split files (default: characters)
+	--additional-suffix	
+		add another suffix after the file-distinguisher suffix
+
+RELATED
+	csplit

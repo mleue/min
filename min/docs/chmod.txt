@@ -1,0 +1,11 @@
+change the permissions of a file
+
+EXAMPLES
+	chmod +x file
+		add the executable flag to file for owner/ownergroup/anyone
+	chmod 644 file
+		set permissions to rw/r/r for owner/ownergroup/anyone
+
+RELATED
+	chown
+	chgrp

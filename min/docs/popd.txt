@@ -1,0 +1,9 @@
+pop a filesystem location from the global stack and cd into it
+
+EXAMPLES
+	popd
+		pop the latest location from the global stack and cd into it
+
+RELATED
+	pushd
+	cd

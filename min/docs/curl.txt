@@ -1,0 +1,21 @@
+send HTTP requests to a server, print results
+
+EXAMPLES
+	curl <IP/URL>
+		perform a GET request to <IP/URL>, print results to stdout
+	curl -I <IP/URL>
+		retrieve the HEADER information for <IP/URL>, print results to stdout
+	curl -o out <IP/URL>
+		perform a GET request to <IP/URL>, write results to file out
+	curl -H "Content-Type: application/json" -X POST -d '{"params": ["1", "2"]}' <IP/URL>
+		perform a POST request to <IP/URL> sending a custom header and a data body in JSON format
+
+FLAGS
+	-H	adding a custom header
+	-X	setting the type of HTTP request (default is GET)
+	-d	data to be sent in the body of a POST request
+	-o	write to a file instead of printing to stdout
+	-I	retrieve only the HEADER of the resource
+
+RELATED
+	wget

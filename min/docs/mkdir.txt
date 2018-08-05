@@ -1,0 +1,11 @@
+create a directory
+
+EXAMPLE
+	mkdir subdir/newdir
+		create directory newdir in .subdir/
+	mkdir -p deeply/nested/newdir
+		create a nested newdir, creating all the intermediate levels as well if needed
+
+FLAGS
+	-p	create intermediate directories if needed
+	-v	explain what is being done (verbose)
