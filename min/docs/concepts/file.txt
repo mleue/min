@@ -1,0 +1,13 @@
+in unix everything is a file
+
+DESCRIPTION
+	This means that every resource conforms with a standard interface. 
+	Therefore any unix tool can interact (input/output) with any kind of resource using the same interface.
+
+RESOURCE EXAMPLES
+	file
+	directory
+	hard-drive
+	keyboard
+	printer
+	network-socket

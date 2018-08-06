@@ -1,0 +1,21 @@
+in unix everything is a file and the entire filesystem hangs from a global root /
+
+DESCRIPTION
+	/bin	executable binary programs
+	/boot	kernel boot loader files
+	/dev	device files to interact with hardware
+	/etc	system configuration files
+	/home	personal directories
+	/lib	library files that binaries can use
+	/media	mounting point for removable media (e.g. USB-sticks)
+	/mnt	temporarily mounted filesystems
+	/opt	optional application software
+	/proc	info about currently running processes
+	/root	root user's home dir
+	/run	system information since the last boot
+	/sbin	system binaries (for system management and maintenance)
+	/tmp	storage for temporary files
+	/var	variable directory (e.g. system logs, anything that changes on a running system)
+
+MORE INFO
+	man 7 hier

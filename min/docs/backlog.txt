@@ -1,0 +1,18 @@
+paste
+sed -i "s/find/replace/g"
+awk
+join
+csplit
+tr
+set, env
+read
+dd
+nohup, disown
+df
+comm
+jobs, fg, CTRL+Z
+top, dsta, iostat, free
+repren, rename (batch rename files)
+rsync
+!! (repeat last command)
+&& (combine commands, following command only runs when previous one succeeded)
