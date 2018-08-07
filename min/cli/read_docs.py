@@ -1,18 +1,17 @@
 import os
 
 
-def read_docs_filenames():
-  """Read the filenames of all docs files.
+def read_filenames(path):
+  """Read the filenames in a dir.
+
+  Arguments:
+    path  -- the path to read filenames from
 
   Returns:
-    docs_path -- path string to docs directory
     filenames -- list of filename strings
   """
-  here_path = os.path.dirname(os.path.realpath(__file__))
-  docs_path = os.path.join(here_path, '..', 'docs')
-  filenames = os.listdir(docs_path)
-
-  return docs_path, filenames
+  filenames = os.listdir(path)
+  return filenames
 
 
 def read_docs_file(filepath):
