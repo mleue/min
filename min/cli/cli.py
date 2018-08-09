@@ -1,43 +1,34 @@
-import os
-import fire
 import argparse
-from .read_docs import read_filenames, read_docs_file
-
-here_path = os.path.dirname(os.path.realpath(__file__))
-identifiers = ['commands', 'topics']
-TOPICS_PATH = os.path.join(here_path, '..', 'docs', 'topics')
+from .io_ops import read_resources
+from .io_ops import print_available_resources, print_minpage
 
 
-def min(command):
-  """Run min cli."""
-  names_to_filename = {}
-  for identifier in identifiers:
-    path = os.path.join(here_path, '..', 'docs', identifier)
-    filenames = read_filenames(path)
-    names_to_filename[identifier] = {filename.split('.')[0]: os.path.join(path, filename) for filename in filenames}
+def min(resource, show_topics):
+  """Run min cli.
 
-  # if no command was given, list available commands
-  if not command:
-    for identifier in identifiers:
-      print("Available {}:".format(identifier))
-      print(list(names_to_filename[identifier].keys()))
+  Arguments
+    resource -- string, identifier of the requested resource
+    show_topics -- bool, whether to query for topics instead of bash commands
+  """
+  category = 'commands'
+  if show_topics:
+    category = 'topics'
+
+  id2filepath = read_resources(category)
+
+  # if no resource was specified, list available resources
+  if not resource:
+    print_available_resources(id2filepath, category)
+  # otherwise try to find the requested resource and print the minpage
   else:
-    try:
-      if command in names_to_filename['commands']:
-        print(read_docs_file(names_to_filename['commands'][command]))
-      elif command in names_to_filename['topics']:
-        print(read_docs_file(names_to_filename['topics'][command]))
-      else:
-        raise ValueError
-    except ValueError:
-      print("No entry for command {}.".format(command))
+    print_minpage(resource, id2filepath, category)
 
 
 def min_cli():
-  """Fire entry point."""
-  #import argparse
+  """CLI entry point."""
   parser = argparse.ArgumentParser()
-  parser.add_argument("command", help="the command you want the minpage for",
+  parser.add_argument("resource", help="which resource you want a minpage for",
                       nargs='?', default='', type=str)
+  parser.add_argument("-t", help="help for topics", action="store_true")
   args = parser.parse_args()
-  min(command=args.command)
+  min(resource=args.resource, show_topics=args.t)
