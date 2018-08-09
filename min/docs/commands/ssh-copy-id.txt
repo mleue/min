@@ -1,0 +1,9 @@
+copy over local ssh keys to a remote (to enable ssh key authentication from then on)
+
+EXAMPLES
+	ssh-copy-id <USER>@<IP>
+		logs into <IP> with <USER> via ssh, then copies over local ssh keys to the remote and enables login via those keys
+
+RELATED
+	ssh
+	ssh-keygen

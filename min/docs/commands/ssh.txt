@@ -1,0 +1,14 @@
+remote login to a server
+
+EXAMPLES
+	ssh <USER>@<IP>
+		use ssh to log into the server at <IP> using the user <USER>
+	ssh -N -L 8080:localhost:8080 <USER>@<IP>
+		forward port 8080 on the localhost the remote port at <IP>:8080
+
+FLAGS
+	-L	port forwarding
+	-N	don't execute any remote command (e.g. useful when -L port forwarding)
+
+RELATED
+	ssh-copy-id

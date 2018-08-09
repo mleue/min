@@ -1,0 +1,9 @@
+create a local ssh key
+
+EXAMPLES
+	ssh-keygen
+		creating a local ssh key with standard options, saving to ~/.ssh/
+
+RELATED
+	ssh
+	ssh-copy-id
