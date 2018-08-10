@@ -1,0 +1,18 @@
+handle packing/unpacking/compressing/uncompressing of .tar containers
+
+EXAMPLES
+	tar -tzf file.tar.gz
+		list the contents of the gzipped .tar container file.tar.gz
+	tar -xzf file.tar.gz
+		uncompress and unpack the gzipped .tar container file.tar.gz
+	tar -czf file.tar.gz *.txt
+		create a gzipped .tar container file.tar.gz from all .txt files in .
+	tar -czf file.tar.gz dir/
+		create a gzipped .tar container file.tar.gz from the entire directory ./dir/
+
+FLAGS
+	-t	list contents of a .tar container
+	-f	indicate the file you want to work with (either to create or to unpack)
+	-z	use gzip (either to compress or uncompress)
+	-x	extract a .tar container
+	-c	create a new .tar container

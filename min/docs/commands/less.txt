@@ -1,5 +1,5 @@
 look at a file without having to load it into memory entirely right away
-(great for peeking into large files)
+(great for peeking into large files, press v in less to edit in your $EDITOR)
 
 RELATED
 	head

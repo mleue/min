@@ -1,0 +1,8 @@
+parse the outputs of some command to be the input arguments into another command
+
+EXAMPLES
+	find . -name '*.txt' | xargs cat
+		all files found by find become the input arguments to cat
+
+	git ls-files | grep ".py" | xargs pycodestyle
+		run a linter over all .py files in your git repository

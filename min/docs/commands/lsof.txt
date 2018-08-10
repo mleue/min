@@ -4,6 +4,8 @@ list all currently open files
 EXAMPLES
 	lsof -i :8000
 		print a list of all files/processes that are currently operating on port 8000
+	lsof -p <PID>
+		print a list of all files/processes that are currently opened by the process with <PID>
 
 FLAGS
 	-i 	specify an internet address search pattern for files to match

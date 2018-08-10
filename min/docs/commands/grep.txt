@@ -22,3 +22,6 @@ FLAGS
 	-C	print matches with Ci lines of context above and below
 	-E	interpret the search pattern as a full-fledged regexp (e.g. regexp operators like () don't ned to be escaped)
 	-F	interpret the search pattern as a plain string
+
+RELATED
+	ag
