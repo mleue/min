@@ -1,0 +1,18 @@
+setting and editing information about remotes
+
+EXAMPLES
+	git remote
+		show a list of all defined remotes
+	git remote -v
+		show a list of all defined remotes and the URLs they point to
+	git remote add <REMOTE-NAME> <REMOTE-URL>
+		add a new remote <REMOTE-NAME> at <REMOTE-URL> to the repo
+	git remote set-url <REMOTE-NAME> <URL>
+		set a new <URL> for an existing remote <REMOTE-NAME>
+	git remote get-url <REMOTE-NAME>
+		print the URL for remote <REMOTE-NAME>
+	git show <REMOTE-NAME>
+		show detailed information about remote <REMOTE-NAME>
+
+FLAGS
+	-v	verbose information about defined remotes

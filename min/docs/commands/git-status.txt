@@ -1,0 +1,8 @@
+show the status of the working directory and staging area as compared with HEAD
+
+EXAMPLES
+	git status
+		see which files are changed in the working directory or staged for commit, compared to HEAD
+
+FLAGS
+	-s	show a shorter status, without all the description text

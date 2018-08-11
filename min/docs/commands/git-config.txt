@@ -1,0 +1,14 @@
+interact with the config files
+
+EXAMPLES
+	git config --list
+		print all config settings
+	git config --list --global
+		print all global settings
+	git config --list --local
+		print all local repo settings
+
+FLAGS
+	--list		print a list of config settings
+	--global	global config at ~/.gitconfig
+	--local		local config at /repo/.git/config

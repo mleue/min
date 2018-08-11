@@ -1,0 +1,5 @@
+see which commit and author was responsible for each line of a file in the repo
+
+EXAMPLES
+	git blame file.x
+		print the file line by line, each line starting with the commit hash and author that last modified that line

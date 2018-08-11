@@ -1,0 +1,22 @@
+clean untracked files in the working directory
+
+EXAMPLES
+	git clean
+		remove all untracked files that are not .gitignored
+	git clean -n
+		do a dryrun, simply printing what would be deleted
+	git clean -d
+		also remove all directories that become empty due to cleaning
+	git clean -f
+		force clean
+	git clean -i
+		interactive removal, asking for permission for each file
+	git clean -x
+		also remove all .gitignored files
+
+FLAGS
+	-n	dryrun
+	-i	interactive
+	-d	delete empty directories as well
+	-f	force clean
+	-x	also delete .gitignored files

@@ -1,0 +1,9 @@
+push local changes to the remote
+
+EXAMPLES
+	git push
+		push changes in the currently active branch to it's upstream branch in the standard remote
+	git push origin branchName
+		push changes in the currently active branch to branchName on the origin remote
+	git push -u origin branchName
+		set up branchName on origin to be the upstream for the currently active branch, then push

@@ -1,0 +1,16 @@
+switch where HEAD is pointing to
+
+EXAMPLES
+	git checkout branch1
+		switch HEAD to point to branch1
+	git checkout -b branch1
+		create a new branch branch1 and switch HEAD to point to it
+		(if a branch of that name exists on the remote, git will automatically set the remote branch1 as the upstream of the local branch1)
+	git checkout -b branch1 commit-hash
+		create a new branch branch1 pointing to commit-hash and switch HEAD to point to it
+
+FLAGS
+	-b	create a new branch
+
+RELATED
+	git-reset

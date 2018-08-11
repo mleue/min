@@ -1,0 +1,20 @@
+branch operations
+
+EXAMPLES
+	git branch
+		show all locally available branches, mark the currently active branch
+	git branch -a
+		show all available branches (local and remote)
+	git branch -r
+		show available branches on the remote
+	git branch -d branch1
+		delete branch1 (will throw an error if branch1 isn't merged into something else yet and commits would become unreachable)
+	git branch -u origin branchName
+		set branchName on the origin remote to be the upstream branch of the currently active one
+
+FLAGS
+	-a			list all branches (local and remote)
+	-r			list only remote branches
+	-u			set upstream information for the currently active branch
+	--merged	list only branches that are already merged (i.e. safe to delete)
+	--no-merged	list only branches that are not yet merged

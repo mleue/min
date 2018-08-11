@@ -1,0 +1,5 @@
+get the SHA1 for any human-readable reference (e.g. branch, tag)
+
+EXAMPLES
+	git rev-parse master
+		print the SHA1 of the commit that master points to
