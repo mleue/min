@@ -1,0 +1,19 @@
+a tiny cli calendar
+
+EXAMPLE
+	ncal -b
+		print current month in horizontal format, highlighting today
+	ncal -bMw3
+		horizontal, week starts on Monday, week numbers, current month +-1
+	ncal -bMw3A 3
+		like above, but adding an additional 3 months to the output
+	ncal -bMwy 2019
+		outputting all months in 2019
+
+FLAGS
+	-b	print in horizontal format (weeks go from left to right)
+	-M	a week starts on Monday
+	-w	add week numbers to the output
+	-3	print the previous, the current and the coming month
+	-A	add an additional number of months
+	-y	specify a year to output

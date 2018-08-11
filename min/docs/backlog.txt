@@ -1,4 +1,3 @@
-cal
 paste
 sed -i "s/find/replace/g"
 awk
