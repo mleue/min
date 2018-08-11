@@ -4,11 +4,11 @@ EXAMPLES
 	grep "pattern" file.txt
 		print lines of file.txt that contain a string matching the "pattern"
 	grep -c "pattern" file.txt
-		like above, but instead of printing actual matches it prints the number of matches found
+		don't print actual matches, instead print the number of matches found
 	grep -rin "pattern" .
-		search recursively and case-insensitively for "pattern" in all files in . and below, print all lines that contain a match with line numbers
+		recursive, case-insensitive, print line-numbers, all files in . and below
 	grep -rinv "pattern" .
-		like above, but instead invert the matching
+		like above, but instead invert the matching (print non-matches)
 	
 FLAGS
 	-r	go recursively through all subdirectories
@@ -20,7 +20,8 @@ FLAGS
 	-A	print matches with Ai lines of context above
 	-B	print matches with Bi lines of context below
 	-C	print matches with Ci lines of context above and below
-	-E	interpret the search pattern as a full-fledged regexp (e.g. regexp operators like () don't ned to be escaped)
+	-E	interpret the search pattern as a full-fledged regexp
+		(e.g. regexp operators like () don't need to be escaped)
 	-F	interpret the search pattern as a plain string
 
 RELATED
