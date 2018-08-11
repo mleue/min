@@ -1,4 +1,5 @@
 import os
+from pydoc import pager
 from .config import DOCS_PATH
 
 
@@ -62,7 +63,7 @@ def print_minpage(resource, id2filepath, category):
     category -- the resource category
   """
   try:
-    print(read_docs_file(id2filepath[resource]))
+    pager(read_docs_file(id2filepath[resource]))
   except KeyError:
     print("No entry for resource '{}' among the available {}."
           .format(resource, category))
