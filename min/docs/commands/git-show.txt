@@ -1,0 +1,7 @@
+show the changes that have been made in a particular commit
+
+EXAMPLES
+	git show
+		show the changes made in HEAD compared to HEAD~
+	git show commit-hash
+		show the changes made in commit-hash compared to commit-hash~

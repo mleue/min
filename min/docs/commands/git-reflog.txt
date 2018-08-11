@@ -1,0 +1,6 @@
+comprehensive log of commits/stashes/merges/checkouts/resets for the last ~months
+(great to e.g. recover lost changes from)
+
+EXAMPLES
+	git reflog
+		print a local log of activity over the past ~months

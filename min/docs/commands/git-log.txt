@@ -1,0 +1,39 @@
+show the log of commits
+
+EXAMPLES
+	git log
+		show basic overview log with commit hash, author, date and commit message
+	git log --stat
+		show log and which files were changed in each commit
+	git log --shortstat
+		show and log and a short overview of how many files and lines were changed in each commit
+	git log -p
+		show log and the file diffs for each commit
+	git log -n 5
+		limit the log output to the latest 5 commits
+	git log --oneline
+		show log in a very compact form 1-line form (hash + commit message)
+	git log --oneline --graph
+		show a simple graph view of the compact log
+	git log branch2 ^branch1
+		show log including all commits reachable from branch2 but not from branch1
+	git log -S searchString
+		show log of all commits that introduced/modified/deleted the searchString
+	git log -L function_name:path/to/file.x
+		show history of of some function function_name in path/to/file.x
+
+FLAGS
+	-n				limit the number of commits to show
+	-p				file diffs for each commit
+	-S				search for when a searchString was introduced/modified/deleted
+	-G				same as -S but using a regex
+	-L				log the evolution of some function in a file
+	--oneline		compact log view (only hash and commit message)
+	--graph			draw a simple graph view
+	--stat			which files were changed in each commit
+	--shortstat		how many files and how many lines were changed in each commit
+	--no-merges		exclude merge-commits from the log
+	--abbrev-commit	log with short hashes that are still unique
+
+RELATED
+	git-reflog

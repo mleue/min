@@ -1,0 +1,17 @@
+add changed files from the working directory to the staging area
+
+EXAMPLES
+	git add file.x
+		add file.x to the staging area
+	git add -A
+		add all changed and untracked files to the staging area
+	git add -p file.x
+		interactively add patches in file.x to the staging area (file.x has to already be tracked)
+	git add -i
+		start an interactive add session for adding/reverting/patching
+
+FLAGS
+	-A	all changed and untracked files
+	-p	patching (interactive adding of parts of a file)
+	-i	interactive add session
+	-N	add an untracked file to be tracked (e.g. if you then want to run -p on that file)

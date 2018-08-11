@@ -1,0 +1,11 @@
+used mostly to apply an ex-style regexp substitution to a file
+(very much like applying ex commands in vim, just right from bash)
+
+EXAMPLES
+	sed s/foo/bar/g file.txt
+		replace foo with bar globally in file.txt
+	sed /^foo/d file.txt
+		delete all lines in file.txt that start on foo
+
+FLAGS
+	-i	change file in place

@@ -1,0 +1,15 @@
+move the currently active branch (the one that HEAD points to) to point to a different commit, optionally propagate those changes to the staging area and/or working directory
+
+EXAMPLES
+	git reset --soft HEAD~
+		removing the HEAD commit, but leaving all your changes intact
+		(e.g. you messed up the latest commit and want to get rid of it without destroying anything)
+	git reset [--mixed] file.x
+		unstage file.x from the staging area (works implicitly with HEAD as the desired commit)
+	git reset --hard origin/master
+		reset the currently active branch to be just like origin/master, destroying all changes you might currently have locally
+
+FLAGS
+	--soft		set currently active branch to point to the specified commit, leave staging area and working directory untouched
+	--mixed		the implicit option, just like `--soft` but in addition it also resets the staging area
+	--hard		just like `--mixed` but in addition it also overwrites the working directory

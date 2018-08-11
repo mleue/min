@@ -1,0 +1,5 @@
+grep in git
+
+EXAMPLES
+	git grep "pattern" <HASH>
+		grep for "pattern" in the files as they were in <HASH>

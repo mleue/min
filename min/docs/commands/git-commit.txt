@@ -1,0 +1,20 @@
+commit staged changes into a new commit node, then advance HEAD and the branch to point to it
+
+EXAMPLES
+	git commit
+		starts an editor to compose a commit message, then commits staging area
+	git commit -m "commit message"
+		commits the staging area with "commit message"
+	git commit -am "commit message"
+		like `commit -m` but adding changed files to the staging area first (note: doesn't add untracked files)
+	git commit --amend
+		add additional staged files or fix the commit message of the latest commit
+	git commit --amend --no-edit
+		like `git commit --amend` but without editing the commit message
+
+FLAGS
+	-m				commit message string
+	-a				add changed files to the staging area before committing (note: doesn't add untracked files)
+	--amend			amend/fix the latest commit (e.g. adding additional files, fixing the commit message)
+	--no-edit		don't edit the commit message (in combination with --amend)
+	--reset-author	reset the author information in the latest commit (in combination with --amend)

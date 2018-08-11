@@ -1,0 +1,7 @@
+clone a remote repository to local
+
+EXAMPLES
+	git clone <REPO-URL>
+		clones the repo at <REPO-URL> to ./repo-name/
+	git clone <REPO-URL> dir
+		clones the repo at <REPO-URL> to ./dir/

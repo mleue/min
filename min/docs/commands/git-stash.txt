@@ -1,0 +1,22 @@
+save current changes (staging area and working directory) without making an official commit
+
+EXAMPLES
+	git stash
+		make a stash of the current working directory changes and staging area, push it onto stash stack (note: will not include untracked files by default)
+	git stash list
+		show the available stashes on the stash stack
+	git stash pop
+		pop the latest stash and apply it on the currently active branch
+	git stash -p
+		interactive patched stashing
+	git stash --include-untracked
+		also include currently untracked files in the stash
+	git stash --keep-index
+		exclude the staging area from the stash
+	git stash branch <NEW-BRANCH>
+		create a new branch <NEW-BRANCH> off from the commit where the latest stash was made, then pop that stash into this new branch (very handy to recover an older stash that wouldn't apply cleanly on the current state)
+
+FLAGS
+	-p					interactive patched staging
+	--keep-index		don't stash the staging area
+	--include-untracked	include untracked files in the stash

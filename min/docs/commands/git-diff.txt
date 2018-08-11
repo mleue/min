@@ -1,0 +1,16 @@
+show the diff of files between two commits
+
+EXAMPLES
+	git diff
+		show the diff between the working copy and HEAD (i.e. see what you're about to stage)
+	git diff --staged
+		show the diff between the staging area and HEAD (i.e. see what you're about to commit)
+	git diff master
+		show the diff between HEAD and master
+	git diff commit-hash1 commit-hash2
+		show the diff between two commits identified by their hashes
+	git diff branch1 branch2
+		show the diff between the latest commits in branch1 and branch2
+
+FLAGS
+	--staged	diff between the staging area and some commit (default: HEAD)
