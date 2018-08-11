@@ -51,7 +51,7 @@ def print_available_resources(id2filepath, category):
     category -- the resource category
   """
   print("Available {}:".format(category))
-  print(list(id2filepath.keys()))
+  print(sorted(list(id2filepath.keys())))
 
 
 def print_minpage(resource, id2filepath, category):
