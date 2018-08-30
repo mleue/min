@@ -2,10 +2,13 @@ used mostly to apply an ex-style regexp substitution to a file
 (very much like applying ex commands in vim, just right from bash)
 
 EXAMPLES
-	sed s/foo/bar/g file.txt
+	sed "s/foo/bar/g" file.txt
 		replace foo with bar globally in file.txt
-	sed /^foo/d file.txt
+	sed "/^foo/d" file.txt
 		delete all lines in file.txt that start on foo
+	sed -E "s/\s/\n/g" file.txt
+		replace all whitespace in file.txt with \n
 
 FLAGS
 	-i	change file in place
+	-E	use extended regexp

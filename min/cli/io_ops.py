@@ -65,8 +65,12 @@ def print_minpage(resource, id2filepath, category):
   try:
     pager(read_docs_file(id2filepath[resource]))
   except KeyError:
-    print("No entry for resource '{}' among the available {}."
-          .format(resource, category))
+    print(("No entry for resource '{}' among the available {}.\n"
+           "\n"
+           "Do you think min should have it?\n"
+           "Then please open an issue at {} \n"
+           "Thanks in advance.")
+           .format(resource, category, 'https://github.com/mleue/min/issues'))
 
 
 def read_resources(category):
