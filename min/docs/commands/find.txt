@@ -1,10 +1,12 @@
-find a file
+find filepaths
 
 EXAMPLES
 	find . -name '*.txt'
 		print all filepaths to .txt files anywhere under .
 	find . -iname 'somefile'
 		print all filepaths to files containing 'somefile' anywhere under ., case-insensitive
+	find . -exec echo {} \;
+		execute the "echo" command on every file that results from the "find" call
 
 FLAGS
 	-name		the pattern of the filename to search for (excluding the path)
@@ -12,3 +14,4 @@ FLAGS
 	-iname		case-insensitive search pattern
 	-maxdepth	maximum depth at which to search through subdirectories
 	-type		the type of file to search for (f - file, d - directory, l - symbolic link)
+	-exec		use the resulting filenames as part of some other command
