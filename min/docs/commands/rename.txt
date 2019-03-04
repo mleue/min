@@ -1,0 +1,8 @@
+rename a file according to a regexp pattern (called prename on some systems)
+
+EXAMPLES
+	rename -v 's/image_//' *.jpg
+		for every .jpg file in ., replace the pattern 'image_' with an emptry string '', be verbose
+
+FLAGS
+	-v		verbose
