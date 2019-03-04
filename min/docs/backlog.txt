@@ -1,3 +1,7 @@
+gzip
+bzip2
+bunzip2, bzless, bzgrep
+gunzip, zless, zgrep
 paste
 sed -i "s/find/replace/g"
 awk
