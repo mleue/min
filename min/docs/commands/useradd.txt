@@ -1,0 +1,13 @@
+add a new user to the system
+
+EXAMPLES
+	useradd -m <username>
+		add a new user <username> to the system, add it to a new usergroup of the same name, create a home directory in the default location (usually /home/<username>)
+	useradd --defaults
+		output default values for e.g. home location, login shell, ...
+
+FLAGS
+	-m			create a home directory for the new user
+	-G			comma-delimited list of groups to add the new user to
+	-s			point to binary of the user's default login shell (bash by default)
+	--defaults	output default values for e.g. home location, login shell, ...
