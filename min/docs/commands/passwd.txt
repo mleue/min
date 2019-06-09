@@ -1,0 +1,11 @@
+set/update the password for a user on the system
+
+EXAMPLES
+	passwd
+		set/update the password for the currently logged in user
+	passwd <username>
+		set/update the password for user <username>
+
+RELATED
+	useradd
+	usermod

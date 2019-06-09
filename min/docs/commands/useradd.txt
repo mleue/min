@@ -11,3 +11,7 @@ FLAGS
 	-G			comma-delimited list of groups to add the new user to
 	-s			point to binary of the user's default login shell (bash by default)
 	--defaults	output default values for e.g. home location, login shell, ...
+
+RELATED
+	passwd
+	usermod
