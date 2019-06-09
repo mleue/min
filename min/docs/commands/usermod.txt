@@ -1,0 +1,12 @@
+change attributes of an existing user on the system
+
+EXAMPLES
+	usermod -l <newname> <oldname>
+		change username from <oldname> to <newname>
+
+FLAGS
+	-l	change username
+
+RELATED
+	useradd
+	passwd
